@@ -1,0 +1,304 @@
+C:\Users\Daniela Rojas>d:
+
+D:\>prog2
+"prog2" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+D:\>prog2 dir
+"prog2" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+D:\>cd
+D:\
+
+D:\>mkdir prog2
+Ya existe el subdirectorio o el archivo prog2.
+
+D:\>cdprog2
+"cdprog2" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+D:\>cd prog2
+
+D:\prog2>dir
+ El volumen de la unidad D es Nuevo vol
+ El número de serie del volumen es: 50AF-0D6F
+
+ Directorio de D:\prog2
+
+05/09/2020  01:02 p. m.    <DIR>          .
+05/09/2020  01:02 p. m.    <DIR>          ..
+05/09/2020  01:02 p. m.                24 archivo_0.txt
+05/09/2020  12:58 p. m.                12 archivo_01.txt
+               2 archivos             36 bytes
+               2 dirs  341.838.270.464 bytes libres
+
+D:\prog2>echo cualquier contenido
+cualquier contenido
+
+D:\prog2>dir
+ El volumen de la unidad D es Nuevo vol
+ El número de serie del volumen es: 50AF-0D6F
+
+ Directorio de D:\prog2
+
+05/09/2020  01:02 p. m.    <DIR>          .
+05/09/2020  01:02 p. m.    <DIR>          ..
+05/09/2020  01:02 p. m.                24 archivo_0.txt
+05/09/2020  12:58 p. m.                12 archivo_01.txt
+               2 archivos             36 bytes
+               2 dirs  341.838.270.464 bytes libres
+
+D:\prog2>echo contenido tercer archivo > archivo_03.txt
+
+D:\prog2>dir
+ El volumen de la unidad D es Nuevo vol
+ El número de serie del volumen es: 50AF-0D6F
+
+ Directorio de D:\prog2
+
+05/09/2020  01:11 p. m.    <DIR>          .
+05/09/2020  01:11 p. m.    <DIR>          ..
+05/09/2020  01:02 p. m.                24 archivo_0.txt
+05/09/2020  12:58 p. m.                12 archivo_01.txt
+05/09/2020  01:11 p. m.                27 archivo_03.txt
+               3 archivos             63 bytes
+               2 dirs  341.838.270.464 bytes libres
+
+D:\prog2>more archivo_0.txt
+contenido_estudiantil
+
+D:\prog2>more archivo_01.txt
+contenido
+
+D:\prog2>more archivo_03.txt
+contenido tercer archivo
+
+D:\prog2>echo contenido del 4to archivo > arcivo_04.txt
+
+D:\prog2>typee archivo_04.txt
+"typee" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+D:\prog2>type arcivo_04.txt
+contenido del 4to archivo
+
+D:\prog2>echo contenido del 4to archico > archivo_05.txt
+
+D:\prog2>fc /l archivo_0.txt archivo_01.txt
+Comparando archivos archivo_0.txt y ARCHIVO_01.TXT
+***** archivo_0.txt
+contenido_estudiantil
+***** ARCHIVO_01.TXT
+contenido
+*****
+
+
+D:\prog2>fc /L archivo_01.txt archivo_01.txt
+Comparando archivos archivo_01.txt y ARCHIVO_01.TXT
+FC: no se han encontrado diferencias
+
+
+D:\prog2>dir
+ El volumen de la unidad D es Nuevo vol
+ El número de serie del volumen es: 50AF-0D6F
+
+ Directorio de D:\prog2
+
+05/09/2020  01:23 p. m.    <DIR>          .
+05/09/2020  01:23 p. m.    <DIR>          ..
+05/09/2020  01:02 p. m.                24 archivo_0.txt
+05/09/2020  12:58 p. m.                12 archivo_01.txt
+05/09/2020  01:11 p. m.                27 archivo_03.txt
+05/09/2020  01:23 p. m.                28 archivo_05.txt
+05/09/2020  01:22 p. m.                28 arcivo_04.txt
+               5 archivos            119 bytes
+               2 dirs  341.838.270.464 bytes libres
+
+D:\prog2>dir
+ El volumen de la unidad D es Nuevo vol
+ El número de serie del volumen es: 50AF-0D6F
+
+ Directorio de D:\prog2
+
+05/09/2020  01:25 p. m.    <DIR>          .
+05/09/2020  01:25 p. m.    <DIR>          ..
+05/09/2020  12:58 p. m.                12 archivo_01.txt
+05/09/2020  01:02 p. m.                24 archivo_02.txt
+05/09/2020  01:11 p. m.                27 archivo_03.txt
+05/09/2020  01:22 p. m.                28 archivo_04.txt
+05/09/2020  01:23 p. m.                28 archivo_05.txt
+               5 archivos            119 bytes
+               2 dirs  341.838.270.464 bytes libres
+
+D:\prog2>fc /L archivo_03.txt archivo_05.txt
+Comparando archivos archivo_03.txt y ARCHIVO_05.TXT
+***** archivo_03.txt
+contenido tercer archivo
+***** ARCHIVO_05.TXT
+contenido del 4to archico
+*****
+
+
+D:\prog2>fc /L archivo_04.txt archivo_05.txt
+Comparando archivos archivo_04.txt y ARCHIVO_05.TXT
+***** archivo_04.txt
+contenido del 4to archivo
+***** ARCHIVO_05.TXT
+contenido del 4to archico
+*****
+
+
+D:\prog2>type archivo_01.txt >> archivo_02.txt
+
+D:\prog2>type archivo_02.txt
+contenido_estudiantil
+contenido
+
+D:\prog2>type archivo_01.txt >> archivo_03.txt
+
+D:\prog2>type archivo_01.txt >> archivo_04.txt
+
+D:\prog2>type archivo_01.txt >> archivo_05.txt
+
+D:\prog2>type archivo_03.txt
+contenido tercer archivo
+contenido
+
+D:\prog2>type archivo_04.txt
+contenido del 4to archivo
+contenido
+
+D:\prog2>dir
+ El volumen de la unidad D es Nuevo vol
+ El número de serie del volumen es: 50AF-0D6F
+
+ Directorio de D:\prog2
+
+05/09/2020  01:25 p. m.    <DIR>          .
+05/09/2020  01:25 p. m.    <DIR>          ..
+05/09/2020  12:58 p. m.                12 archivo_01.txt
+05/09/2020  01:34 p. m.                36 archivo_02.txt
+05/09/2020  01:35 p. m.                39 archivo_03.txt
+05/09/2020  01:35 p. m.                40 archivo_04.txt
+05/09/2020  01:36 p. m.                40 archivo_05.txt
+               5 archivos            167 bytes
+               2 dirs  341.838.266.368 bytes libres
+
+D:\prog2>type *.txt
+
+archivo_01.txt
+
+
+contenido
+
+archivo_02.txt
+
+
+contenido_estudiantil
+contenido
+
+archivo_03.txt
+
+
+contenido tercer archivo
+contenido
+
+archivo_04.txt
+
+
+contenido del 4to archivo
+contenido
+
+archivo_05.txt
+
+
+contenido del 4to archico
+contenido
+
+D:\prog2>cetutil -hashfile archivo_01.txt SHA256
+"cetutil" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+D:\prog2>certutil -hashfile archivo_01.txt SHA256
+SHA256 hash de archivo_01.txt:
+9ce2422319a4f8f9da7201a12ab13c1974c74620be92945f7774b501273f01c0
+CertUtil: -hashfile comando completado correctamente.
+
+D:\prog2>certutil -hashfile archivo_01.txt SHA256 | findstr /v hash
+9ce2422319a4f8f9da7201a12ab13c1974c74620be92945f7774b501273f01c0
+
+D:\prog2>certutil -hashfile archivo_01.txt SHA256 | findstr /v hash > archivo_01_huella_ori.txt
+
+D:\prog2>dir
+ El volumen de la unidad D es Nuevo vol
+ El número de serie del volumen es: 50AF-0D6F
+
+ Directorio de D:\prog2
+
+05/09/2020  01:54 p. m.    <DIR>          .
+05/09/2020  01:54 p. m.    <DIR>          ..
+05/09/2020  12:58 p. m.                12 archivo_01.txt
+05/09/2020  01:54 p. m.                66 archivo_01_huella_ori.txt
+05/09/2020  01:34 p. m.                36 archivo_02.txt
+05/09/2020  01:35 p. m.                39 archivo_03.txt
+05/09/2020  01:35 p. m.                40 archivo_04.txt
+05/09/2020  01:36 p. m.                40 archivo_05.txt
+               6 archivos            233 bytes
+               2 dirs  341.838.262.272 bytes libres
+
+D:\prog2>echo primera alteracion del archivo > archivo_01.txt
+
+D:\prog2>type archivo_01.txt
+primera alteracion del archivo
+
+D:\prog2>echo segunda alteracion del archivo >> archivo_01.txt
+
+D:\prog2>type archivo_01.txt
+primera alteracion del archivo
+segunda alteracion del archivo
+
+D:\prog2>echo 3era alteracion >> archivo_01.txt
+
+D:\prog2>type archivo_01.txt
+primera alteracion del archivo
+segunda alteracion del archivo
+3era alteracion
+
+D:\prog2>certutil -hashfile archivo_01.txt SHA256 | findstr /v hash > archivo_01_huella_actual.txt
+
+D:\prog2>dir
+ El volumen de la unidad D es Nuevo vol
+ El número de serie del volumen es: 50AF-0D6F
+
+ Directorio de D:\prog2
+
+05/09/2020  01:59 p. m.    <DIR>          .
+05/09/2020  01:59 p. m.    <DIR>          ..
+05/09/2020  01:57 p. m.                84 archivo_01.txt
+05/09/2020  01:59 p. m.                66 archivo_01_huella_actual.txt
+05/09/2020  01:54 p. m.                66 archivo_01_huella_ori.txt
+05/09/2020  01:34 p. m.                36 archivo_02.txt
+05/09/2020  01:35 p. m.                39 archivo_03.txt
+05/09/2020  01:35 p. m.                40 archivo_04.txt
+05/09/2020  01:36 p. m.                40 archivo_05.txt
+               7 archivos            371 bytes
+               2 dirs  341.838.262.272 bytes libres
+
+D:\prog2>fc /L archivo_01_huella_actual.txt archivo_01_huella_actual.txt
+Comparando archivos archivo_01_huella_actual.txt y ARCHIVO_01_HUELLA_ACTUAL.TXT
+FC: no se han encontrado diferencias
+
+
+D:\prog2>fc /L archivo_01_huella_actual.txt archivo_01_huella_ori.txt
+Comparando archivos archivo_01_huella_actual.txt y ARCHIVO_01_HUELLA_ORI.TXT
+***** archivo_01_huella_actual.txt
+2e2fe622dd2ca1a282f65a2b36a6749625a42fcc965573a6ec4fa963eeab4e5a
+***** ARCHIVO_01_HUELLA_ORI.TXT
+9ce2422319a4f8f9da7201a12ab13c1974c74620be92945f7774b501273f01c0
+*****
+
+
+D:\prog2>
+
+
